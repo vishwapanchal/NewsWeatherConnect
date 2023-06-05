@@ -1,4 +1,3 @@
-
 from tkinter import *
 import requests
 from tkinter import messagebox
@@ -55,7 +54,7 @@ class NewsApp():
         type = 'general'
         type = event.widget.cget("text").lower()
         apiKey = "<YOUR_NEWS_API_KEY>"        
-        Baseurl = f'https://newsapi.org/v2/top-headlines?country=us&category={type}&apiKey={apikey}'
+        Baseurl = f'https://newsapi.org/v2/top-headlines?country=us&category={type}&apiKey={apiKey}'
         self.textarea.delete("1.0",END)
         self.textarea.insert(END,'READ THE NEWS PROVIDED BY OUR NEWSAPP!!!')
         self.textarea.insert(END,'---------------------------------------------------------------------------------------------\n\n')
